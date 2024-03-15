@@ -1,0 +1,87 @@
+void getStudent() 
+
+ { 
+
+ System.out.println("*********"); 
+
+ System.out.println("Student name is..."+Name); 
+
+ System.out.println("Student reg no is..."+RegNo); 
+
+ System.out.println("Student result is..."+result); 
+
+ System.out.println("Studying in "+sem+" Semester"); 
+
+ System.out.println("Grade "+Grade(result)); 
+
+ System.out.println("*********"); 
+
+ 
+
+ } 
+
+boolean Grade(float result){ 
+
+ if (result>=75 &&result<100){ 
+
+ System.out.println("Passed in Distinction"); 
+
+ }elseif(result>=60 &&result<75){ 
+
+ System.out.println("Passed in first class "); 
+
+ }elseif (result>=50 &&result<60){ 
+
+ System.out.println("Passed in Second class"); 
+
+ }elseif (result>=35 &&result<50){ 
+
+ System.out.println("Pass"); 
+
+ }elseif (result<35 &&result>0){ 
+
+System.out.println("Fail"); 
+
+}else{ 
+
+System.out.println("Invalid input"); 
+
+ } 
+
+ return true; 
+
+ } 
+
+} 
+
+Class demoStudentResult 
+
+{ 
+
+public static void main(String args[]) 
+
+ { 
+
+ Student nikhil = new Student(); 
+
+ nikhil.getStudent(); 
+
+ Student Anusha = new Student("Anusha","119CS21003",45); 
+
+ Anusha.getStudent(); 
+
+ Student Gagana = new Student("Gagana",90); 
+
+ Gagana.getStudent(); 
+
+ Student Chandhan = new Student("Chandhan","119CS21004"); 
+
+ Chandhan.getStudent(); 
+
+ Student Kusuma = new Student(Anusha,Gagana,Chandhan); 
+
+ Kusuma.getStudent(); 
+
+ } 
+
+}
